@@ -31,7 +31,7 @@ function generateOTP() {
 }
 
 // API endpoint to send OTP
-app.post('/api/send-otp', async (req, res) => {
+app.post('https://assignment1-kxjm.onrender.com/api/send-otp', async (req, res) => {
   try {
     const { email } = req.body;
 
@@ -101,7 +101,7 @@ app.post('/api/send-otp', async (req, res) => {
 });
 
 // API endpoint to verify OTP
-app.post('/api/verify-otp', (req, res) => {
+app.post('https://assignment1-kxjm.onrender.com/api/verify-otp', (req, res) => {
   try {
     const { email, otp } = req.body;
 
