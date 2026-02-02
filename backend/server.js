@@ -156,7 +156,7 @@ app.post('https://assignment1-kxjm.onrender.com/api/verify-otp', (req, res) => {
 });
 
 // Health check endpoint
-app.get('/api/health', (req, res) => {
+app.get('https://assignment1-kxjm.onrender.com/api/health', (req, res) => {
   res.json({ status: 'OK', message: 'Server is running' });
 });
 
