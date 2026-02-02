@@ -31,7 +31,7 @@ function generateOTP() {
 }
 
 // API endpoint to send OTP
-app.post('https://assignment1-kxjm.onrender.com/api/send-otp', async (req, res) => {
+app.post('/api/send-otp', async (req, res) => {
   try {
     const { email } = req.body;
 
@@ -101,7 +101,7 @@ app.post('https://assignment1-kxjm.onrender.com/api/send-otp', async (req, res) 
 });
 
 // API endpoint to verify OTP
-app.post('https://assignment1-kxjm.onrender.com/api/verify-otp', (req, res) => {
+app.post('/api/verify-otp', (req, res) => {
   try {
     const { email, otp } = req.body;
 
@@ -156,7 +156,7 @@ app.post('https://assignment1-kxjm.onrender.com/api/verify-otp', (req, res) => {
 });
 
 // Health check endpoint
-app.get('https://assignment1-kxjm.onrender.com/api/health', (req, res) => {
+app.get('/api/health', (req, res) => {
   res.json({ status: 'OK', message: 'Server is running' });
 });
 
